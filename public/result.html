@@ -132,13 +132,13 @@
     
       </footer>
 
-    <script>
+      <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Extract year and branch from the URL
             const urlParams = new URLSearchParams(window.location.search);
             const year = urlParams.get('year');
             const branch = urlParams.get('branch');
-
+        
             if (year && branch) {
                 fetch('data.json')
                     .then(response => response.json())
@@ -158,16 +158,18 @@
                 document.getElementById('content').innerHTML = '<p>Please select a valid year and branch.</p>';
             }
         });
-
+        
+        let allChapters = [];
+        
         function displayContent(branchData) {
             const contentDiv = document.getElementById('content');
             contentDiv.innerHTML = '';
-
+        
             for (const [subject, subjectData] of Object.entries(branchData)) {
                 const subjectSection = document.createElement('section');
                 subjectSection.className = 'mb-8';
                 subjectSection.innerHTML = `<h2 class="text-2xl font-semibold mb-4">${subject}</h2>`;
-
+        
                 subjectData.Chapters.forEach(chapter => {
                     const chapterDiv = document.createElement('div');
                     chapterDiv.className = 'chapter bg-white p-4 rounded-lg shadow mb-4';
@@ -177,36 +179,39 @@
                         <a href="${chapter.File}" download class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300">Download ${chapter.Title}</a>
                     `;
                     subjectSection.appendChild(chapterDiv);
+                    allChapters.push(chapterDiv); // Add each chapter to the allChapters array
                 });
-
+        
                 contentDiv.appendChild(subjectSection);
             }
         }
-
+        
         function updateProgress() {
-    const range = Number(document.getElementById('progressRange').value); // Convert range to number
-    console.log(range); // Check the current range value
-    const progressText = document.getElementById('progressText');
-    const chapters = document.querySelectorAll('.chapter');
-    const totalChapters = 5; // Number of chapters
-    let chaptersToShow = totalChapters;
+        const range = Number(document.getElementById('progressRange').value);
+        const progressText = document.getElementById('progressText');
+        const subjectSections = document.querySelectorAll('section');
 
-    if (range <= 50) {
-        chaptersToShow = Math.ceil(totalChapters * 0.5);
-        progressText.textContent = '50% - Showing ' + chaptersToShow + ' Chapters';
-    } else if (range <= 70) {
-        chaptersToShow = Math.ceil(totalChapters * 0.7);
-        progressText.textContent = '70% - Showing ' + chaptersToShow + ' Chapters';
-    } else if (range > 70) {
-        chaptersToShow = totalChapters; // Ensure all chapters are shown at 100%
-        progressText.textContent = '100% - Showing All Chapters';
+        let chaptersToShow = 5;
+
+        if (range <= 50) {
+            chaptersToShow = 3;
+            progressText.textContent = '50% - Showing 3 Chapters per Subject';
+        } else if (range <= 70) {
+            chaptersToShow = 4;
+            progressText.textContent = '70% - Showing 4 Chapters per Subject';
+        } else {
+            chaptersToShow = 5;
+            progressText.textContent = '100% - Showing All Chapters per Subject';
+        }
+
+        subjectSections.forEach(subjectSection => {
+            const chapters = subjectSection.querySelectorAll('.chapter');
+            chapters.forEach((chapter, index) => {
+                chapter.style.display = index < chaptersToShow ? 'block' : 'none';
+            });
+        });
     }
-
-    chapters.forEach((chapter, index) => {
-        chapter.style.display = index < chaptersToShow ? 'block' : 'none';
-    });
-}
-
-    </script>
+        </script>
+        
 </body>
 </html>
