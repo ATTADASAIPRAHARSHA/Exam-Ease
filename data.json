@@ -1,0 +1,139 @@
+{
+    "1": {
+      "CSE": {
+        "Subject 1": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 2": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 3": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        }
+      },
+      "ECE": {
+        "Subject 1": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 2": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 3": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        }
+      },
+      "EEE": {
+        "Subject 1": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 2": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 3": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        }
+      }
+    },
+    "2": {
+      "CSE": {
+        "Operating system": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Data structures and algorithms": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Software Engineering": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Java Programming": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Discrete Mathematical Structures": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        }
+      },
+      "ECE": {
+        "Subject 1": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 2": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 3": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        }
+      },
+      "EEE": {
+        "Subject 1": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 2": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        },
+        "Subject 3": {
+          "Chapters": [
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+          ]
+        }
+      }
+    }
+  }
+  
