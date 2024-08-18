@@ -95,8 +95,11 @@
         },
         "Discrete Mathematical Structures": {
           "Chapters": [
-            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
-            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "Pdfs/Dmsunit1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 1", "File": "Pdfs/Dmsunit2.pdf" },
+            { "Title": "Chapter 3", "Description": "Description for Chapter 1", "File": "Pdfs/Dmsunit3.pdf" },
+            { "Title": "Chapter 4", "Description": "Description for Chapter 1", "File": "Pdfs/Dmsunit4.pdf" },
+            { "Title": "Chapter 5", "Description": "Description for Chapter 1", "File": "Pdfs/Dmsunit5.pdf" }
           ]
         }
       },
