@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "npm run dev --prefix client",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -13,6 +16,8 @@
     "@google/generative-ai": "^0.17.0",
     "axios": "^1.7.4",
     "bootstrap": "^5.3.3",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "nodemon": "^3.1.4",

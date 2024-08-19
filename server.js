@@ -2,9 +2,12 @@ import 'dotenv/config'; // Automatically loads .env file
 import express from 'express';
 import bodyParser from 'body-parser';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import cors from 'cors';
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(cors());
 
 // Initialize Google Generative AI with API key from environment variables
 const genAI = new GoogleGenerativeAI(process.env.VITE_GOOGLE_GENAI_API_KEY);
