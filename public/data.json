@@ -104,10 +104,13 @@
         }
       },
       "ECE": {
-        "Subject 1": {
+        "Digital communication": {
           "Chapters": [
-            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "chapter1-subject1.pdf" },
-            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "chapter2-subject1.pdf" }
+            { "Title": "Chapter 1", "Description": "Description for Chapter 1", "File": "cPdfs/Dcunit1.pdf" },
+            { "Title": "Chapter 2", "Description": "Description for Chapter 2", "File": "cPdfs/Dcunit2.pdf" },
+            { "Title": "Chapter 3", "Description": "Description for Chapter 3", "File": "cPdfs/Dcunit3.pdf" },
+            { "Title": "Chapter 4", "Description": "Description for Chapter 4", "File": "cPdfs/Dcunit4.pdf" },
+            { "Title": "Chapter 5", "Description": "Description for Chapter 5", "File": "cPdfs/Dcunit5.pdf" }
           ]
         },
         "Subject 2": {
