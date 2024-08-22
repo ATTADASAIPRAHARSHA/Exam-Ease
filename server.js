@@ -33,27 +33,28 @@ app.get('/api/generate', async (req, res) => {
 // POST endpoint to handle AI bot requests
 app.post('/api/generate', async (req, res) => {
   const userPrompt = req.body.prompt;
-    console.log(userPrompt)
+  console.log(userPrompt);
   if (!userPrompt) {
-    return res.status(400).json({ error: 'Prompt is required' });
+      return res.status(400).json({ error: 'Prompt is required' });
   }
 
   try {
-    const result = await model.generateContent(userPrompt);
-    const text = await result.response.text(); // Await the text() method
-    res.json({ response: text });
-    console.log(text);
+      const result = await model.generateContent(userPrompt);
+      const text = await result.response.text(); // Await the text() method
+      res.json({ response: text });
+      console.log(text);
   } catch (error) {
-    console.error('Error generating content:', error);
+      console.error('Error generating content:', error);
 
-    // Handle specific API errors
-    if (error instanceof GoogleGenerativeAIResponseError) {
-      res.status(400).json({ error: 'Content blocked or restricted', details: error.response });
-    } else {
-      res.status(500).json({ error: 'Failed to generate content' });
-    }
+      // Handle errors generically
+      if (error.message.includes('RECITATION')) {
+          res.status(400).json({ error: 'Content blocked due to restrictions' });
+      } else {
+          res.status(500).json({ error: 'Failed to generate content' });
+      }
   }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
